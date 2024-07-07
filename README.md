@@ -25,5 +25,9 @@ Run the Prediction APP
 ```python
 streamlit run app.py
 ```
+
+Demo: 
+
+
 ## Thank You
 
