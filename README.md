@@ -7,5 +7,9 @@
 * Feature Engineering and Selection
 * Model Building
 * Model Evaluation
-* Model Interpretation & Insights
+* Create APP with Streamlit
+
+**Setup the repository**
+```python
+git clone 
 
