@@ -31,38 +31,41 @@ class PredictPipeline:
 
 class CustomData:
     def __init__(self,
-                 carat:float,
-                 depth:float,
-                 table:float,
-                 x:float,
-                 y:float,
-                 z:float,
-                 cut:str,
-                 color:str,
-                 clarity:str):
+                 venue:str,
+                 bat_team:str,
+                 bowl_team:str,
+                 batsman:str,
+                 bowler:str,
+                 runs:int,
+                 wickets:int,
+                 overs:float,
+                 runs_last_5:int,
+                 wickets_last_5:int):
         
-        self.carat=carat
-        self.depth=depth
-        self.table=table
-        self.x=x
-        self.y=y
-        self.z=z
-        self.cut = cut
-        self.color = color
-        self.clarity = clarity
+        self.venue=venue
+        self.bat_team=bat_team
+        self.bowl_team=bowl_team
+        self.batsman=batsman
+        self.bowler=bowler
+        self.runs=runs
+        self.wickets = wickets
+        self.overs = overs
+        self.runs_last_5 = runs_last_5
+        self.wickets_last_5=wickets_last_5
             
     def get_data_as_dataframe(self):
         try:
             custom_data_input_dict = {
-                'carat':[self.carat],
-                'depth':[self.depth],
-                'table':[self.table],
-                'x':[self.x],
-                'y':[self.y],
-                'z':[self.z],
-                'cut':[self.cut],
-                'color':[self.color],
-                'clarity':[self.clarity]
+                'venue':[self.venue],
+                'bat_team':[self.bat_team],
+                'bowl_team':[self.bowl_team],
+                'batsman':[self.batsman],
+                'bowler':[self.bowler],
+                'runs':[self.runs],
+                'wickets':[self.wickets],
+                'overs':[self.overs],
+                'runs_last_5':[self.runs_last_5],
+                'wickets_last_5':[self.wickets_last_5]
                 }
             df = pd.DataFrame(custom_data_input_dict)
             logging.info('Dataframe Gathered')
