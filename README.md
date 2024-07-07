@@ -11,5 +11,19 @@
 
 **Setup the repository**
 ```python
-git clone 
+git clone https://github.com/Al-Hasib/IPL-Score-Prediction-App-Machine-Learning.git
+```
+Install the Requirements
+```python
+pip install -r requirements.txt
+```
+Run Main file for training and Evaluation
+```python
+python main.py
+```
+Run the Prediction APP
+```python
+streamlit run app.py
+```
+##Thank You
 
