@@ -9,7 +9,7 @@ obj = DataIngestion()
 
 f = pyfiglet.figlet_format("Welcome to Abdullah", font="slant")
 print(f)
-f = pyfiglet.figlet_format("Forest Cover Type Prediction", font="digital")
+f = pyfiglet.figlet_format("IPL Total Score Prediction", font="digital")
 print(f)
 
 print("\nData Ingestion Started\n")
